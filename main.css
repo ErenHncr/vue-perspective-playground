@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  background: #261c33;
+  overflow: hidden;
+  display: flex;
+  align-items: center; 
+  justify-content: center 
+}
+
+h2 {
+  color: #8d81f3;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 420px;
+  max-width: 768px;
+  margin: 0 auto;
+  font-family: monospace, sans-serif;
+  font-size: 22px;
+}
+main label{
+  display: block;
+}
+main input[type="range"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 200px;
+}
+section.settings {
+  width: 50%;
+  z-index: 2;
+  user-select: none;
+}
+section.break {
+  flex-basis: 100%;
+  height: 0;
+}
+section.code {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 20px 20px;
+  z-index:999;
+  position: relative;
+  overflow: hidden;
+  max-width: 700px;
+}
+section.code > .tooltip {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 18px;
+}
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.box-container {
+  padding: 50px;
+  border: 1px solid #8d81f3;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background: #8d81f3;
+}
+
+button {
+  background-color: #8d81f3;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+}
+
+label{
+  color: #fff;
+}
+
+.reset, .copy {
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reset:hover, .copy:hover {
+  background-color: #7668f5;
+}
+
+.reset:active, .copy:active {
+  background-color: #5d4cf8;
+}
