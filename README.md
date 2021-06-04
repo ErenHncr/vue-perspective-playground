@@ -1,6 +1,8 @@
 
-# CSS3 Perspective PlayGround
+# Perspective PlayGround
 > Made with **VueJS**.
+
+<ins>Perspective PlayGround</ins> is a **Vue** project for dealing with changing CSS properties that are used to change rotation and perspective of an element.
 
 You can change the *perspective* and *rotation* of an element in the **x**, **y**, and **z** coordinates.
 You can copy the CSS property and use in your projects.
